@@ -1,11 +1,11 @@
 # Calendar-Application-for-Communication-Tracking
-# 🏢 Company Management System
+# Company Management System
 
 A responsive and modular web application that allows administrators to manage company details and users to view dashboards and calendars. This application separates admin and user functionalities for better user experience.
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### **Admin Features**
 - Add, edit, and delete company information.
@@ -18,7 +18,7 @@ A responsive and modular web application that allows administrators to manage co
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Frontend Framework**: React.js
 - **State Management**: React Context API
@@ -28,17 +28,12 @@ A responsive and modular web application that allows administrators to manage co
 
 ---
 
-## 📂 Project Structure
+## Application Functionality
 
-company-management-system/ ├── src/ │ ├── components/ │ │ ├── admin/ │ │ │ └── CompanyManagement.js # Admin-specific functionality │ │ ├── user/ │ │ │ ├── Dashboard.js # User dashboard │ │ │ └── CalendarView.js # User calendar │ │ ├── SelectionPage.js # Admin/User role selection page │ │ └── CompanyContext.js # Shared state management │ ├── styles/ │ │ └── SelectionPage.css # Dark mode styles │ └── App.js # Main entry point ├── public/ │ └── index.html ├── package.json ├── README.md └── .gitignore 
-
-📋 Application Functionality
-Admin
-Role Selection: Navigate to /admin after selecting the "Admin" option.
-Company Management: Access the CompanyManagement.js component to manage companies.
-State Sharing: Admin data is shared globally using CompanyContext.js.
-User
-Role Selection: Navigate to /user after selecting the "User" option.
-Dashboard and Calendar View: Use Dashboard.js and CalendarView.js for company insights and scheduling.
+ - **Admins configure companies (details, periodicity) and communication methods (type, sequence).
+ - **Users view company communication summaries (last interactions, next scheduled) on a dashboard with color-coded highlights.
+ - **Users log new communications (type, date, notes) via a modal, resetting highlights.
+ - **Notifications display overdue and due communications in grids with a badge counter.
+ - **A calendar view shows past and upcoming communications, enabling interaction and management.
 
 LIVE LINK - https://calendar-application-for-communicatio.netlify.app/
